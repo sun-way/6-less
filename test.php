@@ -64,8 +64,6 @@ $testQuestionsArray = $testData['questions'];
                     <?php if (empty($answer['title'])): ?>
                         <?php continue; ?>
                     <?php endif; ?>
-
-                    <!-- TODO: разобраться с correct -->
                     <?php $correct = isset($answer['correct']) && $answer['correct'] ? 'correct' : ''; ?>
 
                     <label>
