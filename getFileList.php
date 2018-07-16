@@ -1,12 +1,12 @@
-<?php
+<?php 
 function getFileList($options) {
     if (!isset($options)) {
-        exit('Options not transferred');
+      exit('Options not transferred');
     } elseif (empty($options)) {
-        exit('Options empty');
-
+      exit('Options empty');
+      
     } elseif (empty($options['targetDir'])) {
-        exit('Wrong target dir');
+      exit('Wrong target dir');
     }
     $targetDir = $options['targetDir'];
     $returnCount = $options['returnCount'];
@@ -19,7 +19,7 @@ function getFileList($options) {
         $list[] = $file;
     }
     if ($returnCount) {
-        return count($list);
+      return count($list);
     }
     return $list;
 }
