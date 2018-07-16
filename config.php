@@ -1,3 +1,3 @@
 <?php
-$testsDir = __DIR__ . './testfiles';
+$testsDir = __DIR__ . '/testfiles/';
 ?>
